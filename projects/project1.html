@@ -2,328 +2,578 @@
 <html lang="el">
   <head>
     <meta charset="utf-8" />
-    <title>Έργο 1 - Γεωπονική Απολυμαντική</title>
+    <title>
+      Διαμόρφωση κήπου σε κατοικία στην Κηφισιά - Γεωπονική Απολυμαντική
+    </title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <meta content="" name="keywords" />
-    <meta content="" name="description" />
+    <meta
+      content="κήπος, διαμόρφωση κήπου, κατασκευή κήπου, κηφισιά, γεωπονική απολυμαντική"
+      name="keywords"
+    />
+    <meta
+      content="Ολοκληρωμένη διαμόρφωση κήπου σε κατοικία στην Κηφισιά με σύγχρονο σχεδιασμό και αυτόματο σύστημα άρδευσης"
+      name="description"
+    />
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
 
     <!-- Icon Font Stylesheet -->
     <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
       rel="stylesheet"
     />
 
-    <!-- Libraries Stylesheet -->
-    <link href="../lib/animate/animate.min.css" rel="stylesheet" />
-    <link
-      href="../lib/owlcarousel/assets/owl.carousel.min.css"
-      rel="stylesheet"
-    />
-
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="../css/bootstrap.min.css" rel="stylesheet" />
-
-    <!-- Template Stylesheet -->
-    <link href="../css/style.css" rel="stylesheet" />
-    <style>
-      /* Additional styling for dedicated service pages */
-      .service-header {
-        background-size: cover;
-        background-position: center;
-        padding: 100px 0;
-      }
-      .service-content {
-        padding: 50px 0;
-      }
-    </style>
+    <!-- Main Stylesheet -->
+    <link href="../styles.css" rel="stylesheet" />
+    <link href="projects-styles.css" rel="stylesheet" />
   </head>
   <body>
-    <!-- Spinner Start -->
-    <div
-      id="spinner"
-      class="show w-100 vh-100 bg-white position-fixed translate-middle top-50 start-50 d-flex align-items-center justify-content-center"
-    >
-      <div class="spinner-grow text-primary" role="status"></div>
-    </div>
-    <!-- Spinner End -->
-
-    <!-- Topbar Start -->
-    <div class="container-fluid bg-primary py-2">
-      <div class="container">
-        <!-- Use flex-column on mobile and flex-md-row on medium+ -->
-        <div
-          class="d-flex flex-column flex-md-row align-items-center justify-content-center justify-content-md-between"
-        >
-          <!-- Contact Info -->
-          <div
-            class="d-flex flex-wrap align-items-center justify-content-center text-center text-md-start mb-2 mb-md-0"
-          >
-            <!-- Address: Each line with its own icon -->
-            <div class="me-3 text-secondary small">
-              <div class="d-flex align-items-center">
-                <i class="fas fa-map-marker-alt me-1 text-dark"></i>
-                <a
-                  href="http://maps.apple.com/?address=Δήλου+18Α,+121+34+Περιστέρι+Αττικής
-"
-                  target="_blank"
-                  >Δήλου 18 Α, Περιστέρι</a
-                >
-              </div>
-              <div class="d-flex align-items-center">
-                <i class="fas fa-map-marker-alt me-1 text-dark"></i>
-                <a
-                  href="http://maps.apple.com/?address=Αγίου+Νικολάου+59,+190+04+Σπάτα+Αττικής"
-                  target="_blank"
-                  >Αγίου Νικολάου 58, Σπάτα</a
-                >
-              </div>
-            </div>
-            <!-- Phone -->
-            <a href="tel:+306936552395" class="me-3 text-secondary small">
-              <i class="fas fa-phone-alt me-1 text-dark"></i>+306936552395
+    <!-- Header - Updated structure -->
+    <header class="header">
+      <div class="top-bar">
+        <div class="container">
+          <div class="contact-info">
+            <a href="tel:+306936552395" class="contact-link">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                ></path>
+              </svg>
+              +306936552395
             </a>
-            <!-- Email -->
-            <a href="mailto:praseino@gmail.com" class="text-secondary small">
-              <i class="fas fa-envelope me-1 text-dark"></i>praseino@gmail.com
+            <a href="mailto:praseino@gmail.com" class="contact-link">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                ></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              praseino@gmail.com
             </a>
           </div>
-          <!-- Social Icons -->
-          <div
-            class="d-flex align-items-center justify-content-center text-center"
-          >
-            <a href="https://www.facebook.com/geoponialandscape" class="me-2">
-              <i class="fab fa-facebook-f text-dark"></i>
+          <div class="social-links">
+            <a
+              href="https://www.facebook.com/geoponialandscape"
+              aria-label="Facebook"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+                ></path>
+              </svg>
             </a>
-            <a href="#" class="me-2">
-              <i class="fab fa-twitter text-dark"></i>
-            </a>
-            <a href="#" class="me-2">
-              <i class="fab fa-instagram text-dark"></i>
-            </a>
-            <a href="#">
-              <i class="fab fa-linkedin-in text-dark"></i>
+            <a href="#" aria-label="Instagram">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path
+                  d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"
+                ></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
             </a>
           </div>
         </div>
       </div>
-    </div>
-    <!-- Topbar End -->
 
-    <!-- Navbar Start -->
-    <div class="container-fluid bg-dark">
       <div class="container">
-        <nav class="navbar navbar-dark navbar-expand-lg py-lg-0">
-          <a href="../index.html" class="navbar-brand">
-            <img src="../img/logo-2.png" />
+        <nav class="navbar">
+          <a href="../index.html" class="logo">
+            <img
+              src="../img/logo-3.png"
+              alt="Γεωπονική Απολυμαντική"
+              width="180"
+            />
           </a>
-          <button
-            class="navbar-toggler bg-primary"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarCollapse"
-          >
-            <span class="fa fa-bars text-dark"></span>
+          <button class="menu-toggle" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
           </button>
-          <div class="collapse navbar-collapse me-n3" id="navbarCollapse">
-            <div class="navbar-nav ms-auto">
-              <a href="../index.html" class="nav-item nav-link active"
-                >Αρχική</a
-              >
-              <a href="../index.html#about" class="nav-item nav-link"
-                >Η εταιρία μας</a
-              >
-              <a href="../index.html#service" class="nav-item nav-link"
-                >Υπηρεσίες</a
-              >
-              <a href="../index.html#project" class="nav-item nav-link"
-                >Τα έργα μας</a
-              >
-            </div>
-          </div>
+          <ul class="nav-menu">
+            <li><a href="../index.html" class="active">Αρχική</a></li>
+            <li><a href="../index.html#about">Η εταιρία μας</a></li>
+            <li><a href="../index.html#services">Υπηρεσίες</a></li>
+            <li><a href="../index.html#projects">Τα έργα μας</a></li>
+          </ul>
         </nav>
       </div>
-    </div>
-    <!-- Navbar End -->
+    </header>
 
-    <div class="container py-5">
-      <h1 class="mb-4">Έργο 1</h1>
-      <img src="../img/project-1.jpg" class="img-fluid mb-4" alt="Έργο 1" />
-      <p>
-        Λεπτομερής περιγραφή του Έργου 1. Εδώ μπορείτε να εξηγήσετε τη
-        διαδικασία, τα αποτελέσματα και τις τεχνολογίες που χρησιμοποιήθηκαν στο
-        έργο.
-      </p>
-      <a href="projects.html" class="btn btn-primary">Επιστροφή στα Έργα μας</a>
-    </div>
-
-    <!-- Footer Start -->
-    <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay=".3s">
-      <div class="container py-5">
-        <div class="row g-4 footer-inner">
-          <div class="col-lg-4 col-md-8">
-            <div class="footer-item">
-              <h4 class="text-white fw-bold mb-4">Γεωπονική Απολυμαντική</h4>
-              <p style="text-transform: none">
-                Στην εταιρία μας, αφιερωνόμαστε στην εξειδίκευση της μυοκτονίας
-                και των απεντομώσεων με τον πλέον αποτελεσματικό και βιώσιμο
-                τρόπο. Βασιζόμαστε στην επιστημονική προσέγγιση των γεωπόνων μας
-                για να σας προσφέρουμε λύσεις που είναι αποτελεσματικές και
-                φιλικές προς το περιβάλλον.
-              </p>
+    <!-- Project Detail -->
+    <section class="project-detail">
+      <div class="container project-detail-container">
+        <div class="project-detail-header">
+          <h1 class="project-detail-title">
+            Διαμόρφωση κήπου σε κατοικία στην Κηφισιά
+          </h1>
+          <div class="project-detail-meta">
+            <div class="project-detail-meta-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Κηφισιά, Αθήνα</span>
+            </div>
+            <div class="project-detail-meta-item">
+              <i class="fas fa-calendar-alt"></i>
+              <span>Ολοκληρώθηκε: Μάιος 2024</span>
+            </div>
+            <div class="project-detail-meta-item">
+              <i class="fas fa-ruler-combined"></i>
+              <span>Έκταση: 350 τ.μ.</span>
+            </div>
+            <div class="project-detail-meta-item">
+              <i class="fas fa-clock"></i>
+              <span>Διάρκεια: 3 μήνες</span>
             </div>
           </div>
-          <div class="col-lg-4 col-md-8">
-            <div class="footer-item">
-              <h4 class="text-white fw-bold mb-4">Χρήσιμοι Σύνδεσμοι</h4>
-              <div class="d-flex flex-column align-items-start">
-                <a class="btn btn-link ps-0" href="#about"
-                  ><i class="fa fa-check me-2"></i>Η εταιρία μας</a
-                >
-                <a class="btn btn-link ps-0" href="#service"
-                  ><i class="fa fa-check me-2"></i>Οι υπηρεσίες μας</a
-                >
-                <a class="btn btn-link ps-0" href="#project"
-                  ><i class="fa fa-check me-2"></i>Τα έργα μας</a
-                >
-                <a class="btn btn-link ps-0" href="#blog"
-                  ><i class="fa fa-check me-2"></i>Το blog μας</a
-                >
-              </div>
+          <span class="project-detail-category">Κήπος</span>
+        </div>
+
+        <div class="project-gallery">
+          <div class="project-main-image">
+            <img
+              src="../img/project-1.jpg"
+              alt="Διαμόρφωση κήπου σε κατοικία στην Κηφισιά"
+              id="main-project-image"
+            />
+          </div>
+          <div class="project-thumbnails">
+            <div
+              class="project-thumbnail active"
+              data-src="../img/project-1.jpg"
+            >
+              <img src="../img/project-1.jpg" alt="Κεντρική όψη κήπου" />
+            </div>
+            <div class="project-thumbnail" data-src="../img/project-1-2.jpg">
+              <img src="../img/project-1-2.jpg" alt="Χώρος καθιστικού" />
+            </div>
+            <div class="project-thumbnail" data-src="../img/project-1-3.jpg">
+              <img src="../img/project-1-3.jpg" alt="Διάδρομος με φυτά" />
+            </div>
+            <div class="project-thumbnail" data-src="../img/project-1-4.jpg">
+              <img src="../img/project-1-4.jpg" alt="Σύστημα άρδευσης" />
             </div>
           </div>
-          <!--
-          <div class="col-lg-3 col-md-6">
-            <div class="footer-item">
-              <h4 class="text-white fw-bold mb-4">Οι υπηρεσίες μας</h4>
-              <div class="d-flex flex-column align-items-start">
-                <a class="btn btn-link ps-0" href=""
-                  ><i class="fa fa-check me-2"></i>Απεντομώσεις</a
-                >
-                <a class="btn btn-link ps-0" href=""
-                  ><i class="fa fa-check me-2"></i>Μυοκτονία</a
-                >
-                <a class="btn btn-link ps-0" href=""
-                  ><i class="fa fa-check me-2"></i>Απολύμανση</a
-                >
+        </div>
+
+        <div class="project-content">
+          <p>
+            Αναλάβαμε την πλήρη διαμόρφωση του κήπου σε μια πολυτελή κατοικία
+            στην Κηφισιά, με στόχο τη δημιουργία ενός σύγχρονου, λειτουργικού
+            και αισθητικά άρτιου χώρου πρασίνου που θα αναδείκνυε την
+            αρχιτεκτονική του κτιρίου και θα προσέφερε στους ιδιοκτήτες έναν
+            ιδανικό χώρο χαλάρωσης και ψυχαγωγίας.
+          </p>
+
+          <h2>Η πρόκληση</h2>
+          <p>
+            Ο χώρος παρουσίαζε αρκετές προκλήσεις, καθώς είχε σημαντικές
+            υψομετρικές διαφορές και το έδαφος χρειαζόταν εκτεταμένη βελτίωση.
+            Επιπλέον, οι ιδιοκτήτες επιθυμούσαν έναν κήπο με χαμηλές απαιτήσεις
+            συντήρησης, αλλά ταυτόχρονα με πλούσια βλάστηση και χρώμα καθ' όλη
+            τη διάρκεια του έτους.
+          </p>
+
+          <h2>Η προσέγγισή μας</h2>
+          <p>
+            Ξεκινήσαμε με μια λεπτομερή μελέτη του χώρου και των αναγκών των
+            ιδιοκτητών. Σχεδιάσαμε έναν κήπο που συνδύαζε διαφορετικές ζώνες
+            λειτουργικότητας:
+          </p>
+          <ul>
+            <li>
+              Μια κεντρική ζώνη χαλάρωσης με καθιστικό και υπαίθρια τραπεζαρία
+            </li>
+            <li>Έναν χώρο με γκαζόν για παιχνίδι</li>
+            <li>Περιμετρικές φυτεύσεις για ιδιωτικότητα και αισθητική</li>
+            <li>
+              Διακοσμητικά μονοπάτια που συνδέουν τους διαφορετικούς χώρους
+            </li>
+            <li>
+              Ένα μικρό λαχανόκηπο για τις γαστρονομικές ανάγκες της οικογένειας
+            </li>
+          </ul>
+
+          <h2>Υλοποίηση</h2>
+          <p>Η υλοποίηση του έργου περιλάμβανε τα ακόλουθα στάδια:</p>
+
+          <h3>1. Προετοιμασία εδάφους</h3>
+          <p>
+            Πραγματοποιήσαμε εκτεταμένες χωματουργικές εργασίες για τη
+            διαμόρφωση των επιπέδων και την αντιμετώπιση των υψομετρικών
+            διαφορών. Το έδαφος εμπλουτίστηκε με οργανικά υλικά και ειδικά
+            μείγματα για τη βελτίωση της γονιμότητας και της αποστράγγισης.
+          </p>
+
+          <h3>2. Κατασκευή υποδομών</h3>
+          <p>
+            Εγκαταστήσαμε ένα σύγχρονο σύστημα αυτόματης άρδευσης με αισθητήρες
+            υγρασίας για εξοικονόμηση νερού. Επίσης, δημιουργήσαμε ένα
+            αποτελεσματικό σύστημα αποστράγγισης για την αποφυγή συσσώρευσης
+            νερού σε περιόδους έντονων βροχοπτώσεων.
+          </p>
+
+          <h3>3. Κατασκευή σκληρών επιφανειών</h3>
+          <p>
+            Δημιουργήσαμε μονοπάτια από φυσική πέτρα, πλακόστρωτες επιφάνειες
+            για το καθιστικό και την τραπεζαρία, και χαμηλούς πέτρινους τοίχους
+            αντιστήριξης που λειτουργούν και ως διακοσμητικά στοιχεία.
+          </p>
+
+          <h3>4. Φυτεύσεις</h3>
+          <p>
+            Επιλέξαμε φυτά που ταιριάζουν στο μεσογειακό κλίμα και έχουν χαμηλές
+            απαιτήσεις σε νερό. Συγκεκριμένα:
+          </p>
+          <ul>
+            <li>Δέντρα: Ελιές, εσπεριδοειδή και διακοσμητικές ροδιές</li>
+            <li>
+              Θάμνοι: Λεβάντα, δεντρολίβανο, θυμάρι και άλλα αρωματικά φυτά
+            </li>
+            <li>Αναρριχώμενα: Βουκαμβίλια και γιασεμί για χρώμα και άρωμα</li>
+            <li>
+              Εποχιακά λουλούδια: Στρατηγικά τοποθετημένα για χρώμα καθ' όλη τη
+              διάρκεια του έτους
+            </li>
+          </ul>
+
+          <h3>5. Φωτισμός</h3>
+          <p>
+            Εγκαταστήσαμε ένα σύστημα εξωτερικού φωτισμού χαμηλής κατανάλωσης
+            που αναδεικνύει τα βασικά στοιχεία του κήπου και επιτρέπει τη χρήση
+            του χώρου και κατά τις βραδινές ώρες.
+          </p>
+        </div>
+
+        <div class="project-details-list">
+          <h3>Στοιχεία Έργου</h3>
+          <div class="project-detail-item">
+            <span class="project-detail-label">Πελάτης:</span>
+            <span class="project-detail-value">Ιδιωτική Κατοικία</span>
+          </div>
+          <div class="project-detail-item">
+            <span class="project-detail-label">Τοποθεσία:</span>
+            <span class="project-detail-value">Κηφισιά, Αθήνα</span>
+          </div>
+          <div class="project-detail-item">
+            <span class="project-detail-label">Έκταση:</span>
+            <span class="project-detail-value">350 τ.μ.</span>
+          </div>
+          <div class="project-detail-item">
+            <span class="project-detail-label">Διάρκεια Έργου:</span>
+            <span class="project-detail-value">3 μήνες</span>
+          </div>
+          <div class="project-detail-item">
+            <span class="project-detail-label">Ολοκλήρωση:</span>
+            <span class="project-detail-value">Μάιος 2024</span>
+          </div>
+          <div class="project-detail-item">
+            <span class="project-detail-label">Υπηρεσίες:</span>
+            <span class="project-detail-value"
+              >Σχεδιασμός Κήπου, Χωματουργικές Εργασίες, Φυτεύσεις, Σύστημα
+              Άρδευσης, Φωτισμός</span
+            >
+          </div>
+        </div>
+
+        <div class="project-navigation">
+          <a href="project9.html" class="prev"
+            ><i class="fas fa-arrow-left"></i> Προηγούμενο Έργο</a
+          >
+          <a href="project2.html" class="next"
+            >Επόμενο Έργο <i class="fas fa-arrow-right"></i
+          ></a>
+        </div>
+
+        <div class="related-projects">
+          <h3>Παρόμοια Έργα</h3>
+          <div class="related-projects-grid">
+            <div class="project-card" data-category="garden residential">
+              <div class="project-image">
+                <img
+                  src="../img/project-5.jpg"
+                  alt="Ανακατασκευή κήπου με σύστημα αυτόματου ποτίσματος"
+                />
+                <div class="project-overlay">
+                  <div class="project-category">Κήπος</div>
+                  <a href="project5.html" class="btn-view">Δείτε το έργο</a>
+                </div>
+              </div>
+              <div class="project-info">
+                <h3 class="project-title">
+                  Ανακατασκευή κήπου με σύστημα αυτόματου ποτίσματος
+                </h3>
+                <p class="project-location">
+                  <i class="fas fa-map-marker-alt"></i> Βούλα, Αθήνα
+                </p>
               </div>
             </div>
-          </div> -->
-          <div class="col-lg-4 col-md-8">
-            <div class="footer-item">
-              <h4 class="text-white fw-bold mb-4">Επικοινωνία</h4>
-              <a
-                href="http://maps.apple.com/?address=Δήλου+18Α,+121+34+Περιστέρι+Αττικής
-"
-                target="_blank"
-                class="btn btn-link w-100 text-start ps-0 pb-3 border-bottom rounded-0"
-              >
-                <div class="d-flex align-items-center">
-                  <i class="fa fa-map-marker-alt me-3"></i>
-                  <span>Δήλου 18 Α, Περιστέρι</span>
+
+            <div class="project-card" data-category="garden commercial">
+              <div class="project-image">
+                <img
+                  src="../img/project-3.jpg"
+                  alt="Κατασκευή κήπου σε επαγγελματικό χώρο"
+                />
+                <div class="project-overlay">
+                  <div class="project-category">Κήπος</div>
+                  <a href="project3.html" class="btn-view">Δείτε το έργο</a>
                 </div>
-              </a>
-              <a
-                href="http://maps.apple.com/?address=Αγίου+Νικολάου+59,+190+04+Σπάτα+Αττικής"
-                target="_blank"
-                class="btn btn-link w-100 text-start ps-0 pb-3 border-bottom rounded-0"
-              >
-                <div class="d-flex align-items-center">
-                  <i class="fa fa-map-marker-alt me-3"></i>
-                  <span>Αγίου Νικολάου 58, Σπάτα</span>
+              </div>
+              <div class="project-info">
+                <h3 class="project-title">
+                  Κατασκευή κήπου σε επαγγελματικό χώρο
+                </h3>
+                <p class="project-location">
+                  <i class="fas fa-map-marker-alt"></i> Μαρούσι, Αθήνα
+                </p>
+              </div>
+            </div>
+
+            <div class="project-card" data-category="garden residential">
+              <div class="project-image">
+                <img
+                  src="../img/project-9.jpg"
+                  alt="Κατασκευή βιοκλιματικού κήπου σε μονοκατοικία"
+                />
+                <div class="project-overlay">
+                  <div class="project-category">Κήπος</div>
+                  <a href="project9.html" class="btn-view">Δείτε το έργο</a>
                 </div>
-              </a>
-              <a
-                href="tel:+306936552395"
-                class="btn btn-link w-100 text-start ps-0 py-3 border-bottom rounded-0"
-              >
-                <i class="fa fa-phone-alt me-3"></i>+306936552395
-              </a>
-              <a
-                href="mailto:praseino@gmail.com"
-                class="btn btn-link w-100 text-start ps-0 py-3 border-bottom rounded-0"
-                style="text-transform: none"
-              >
-                <i class="fa fa-envelope me-3"></i>praseino@gmail.com
-              </a>
+              </div>
+              <div class="project-info">
+                <h3 class="project-title">
+                  Κατασκευή βιοκλιματικού κήπου σε μονοκατοικία
+                </h3>
+                <p class="project-location">
+                  <i class="fas fa-map-marker-alt"></i> Εκάλη, Αθήνα
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <!-- Footer End -->
+    </section>
 
-    <!-- Copyright Start -->
-    <div class="container-fluid bg-dark py-4">
+    <!-- Call to Action -->
+    <section class="cta-section">
       <div class="container">
-        <div class="row align-items-center">
-          <!-- Logo Section -->
-          <div class="col-md-4 text-center text-md-start mb-3 mb-md-0">
-            <a href="../index.html" class="d-inline-block">
-              <img
-                src="../img/logo-2.png"
-                alt="Logo"
-                class="img-fluid"
-                style="max-width: 150px"
-              />
+        <div class="cta-content">
+          <h2>Θέλετε να δημιουργήσουμε τον δικό σας κήπο;</h2>
+          <p>
+            Επικοινωνήστε μαζί μας για μια δωρεάν εκτίμηση και συμβουλές από
+            τους ειδικούς μας
+          </p>
+          <div class="cta-buttons">
+            <a href="tel:+306936552395" class="btn btn-primary"
+              ><i class="fas fa-phone-alt"></i> Καλέστε μας</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+   <!-- Footer -->
+   <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-info">
+          <img
+            src="img/logo-3.png"
+            alt="Γεωπονική Απολυμαντική"
+            class="footer-logo"
+            width="160"
+          />
+          <p>
+            Στην εταιρία μας, αφιερωνόμαστε στην εξειδίκευση της μυοκτονίας
+            και των απεντομώσεων με τον πλέον αποτελεσματικό και βιώσιμο
+            τρόπο. Βασιζόμαστε στην επιστημονική προσέγγιση των γεωπόνων μας
+            για να σας προσφέρουμε λύσεις που είναι αποτελεσματικές και
+            φιλικές προς το περιβάλλον. Συμμόρφωση με τη
+            <a
+              href="https://www.kodiko.gr/nomothesia/document/1107136/nomos-5170-2025"
+              class="fek"
+            >
+              Νομοθεσία 5170/2025 ΦΕΚ.</a
+            >
+          </p>
+        </div>
+
+        <div class="footer-links">
+          <h3>Χρήσιμοι Σύνδεσμοι</h3>
+          <ul>
+            <li><a href="#about">Η εταιρία μας</a></li>
+            <li><a href="#services">Οι υπηρεσίες μας</a></li>
+            <li><a href="#projects">Τα έργα μας</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact">
+          <h3>Επικοινωνία</h3>
+          <p>
+            <a
+              href="https://beta.maps.apple.com/?address=Κρήτης+Ωκεανίδων,+Ραφήνα"
+              target="_blank"
+              >Κρήτης Ωκεανίδων, Ραφήνα</a
+            >
+          </p>
+          <p>
+            <a
+              href="http://beta.maps.apple.com/?address=Δήλου+18Α,+121+34+Περιστέρι+Αττικής"
+              target="_blank"
+              >Δήλου 18 Α, Περιστέρι</a
+            >
+          </p>
+          <p>
+            <a
+              href="http://beta.maps.apple.com/?address=Αγίου+Νικολάου+59,+190+04+Σπάτα+Αττικής"
+              target="_blank"
+              >Αγίου Νικολάου 59, Σπάτα</a
+            >
+          </p>
+          <p><a href="tel:+306936552395">+306936552395</a></p>
+          <p><a href="mailto:praseino@gmail.com">praseino@gmail.com</a></p>
+
+          <div class="social-links">
+            <a
+              href="https://www.facebook.com/geoponialandscape"
+              aria-label="Facebook"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+                ></path>
+              </svg>
+            </a>
+            <a href="#" aria-label="Instagram">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path
+                  d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"
+                ></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
             </a>
           </div>
-          <!-- Social Icons Section -->
-          <div class="col-md-4 text-center mb-3 mb-md-0">
-            <a class="btn btn-primary rounded-circle me-3" href="#"
-              ><i class="fab fa-twitter"></i
-            ></a>
-            <a
-              class="btn btn-primary rounded-circle me-3"
-              href="https://www.facebook.com/geoponialandscape"
-              ><i class="fab fa-facebook-f"></i
-            ></a>
-            <a class="btn btn-primary rounded-circle me-3" href="#"
-              ><i class="fab fa-youtube"></i
-            ></a>
-            <a class="btn btn-primary rounded-circle" href="#"
-              ><i class="fab fa-linkedin-in"></i
-            ></a>
-          </div>
-          <!-- Copyright Section -->
-          <div class="col-md-4 text-center text-md-end text-white">
-            <small>&copy; 2025 Geoponia. All rights reserved.</small>
-          </div>
         </div>
       </div>
+
+      <div class="copyright">
+        <p>
+          &copy; 2025 Γεωπονική Απολυμαντική. Με επιφύλαξη παντός δικαιώματος.
+        </p>
+      </div>
     </div>
-    <!-- Copyright End -->
+  </footer>
 
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-primary rounded-circle border-3 back-to-top"
-      ><i class="fa fa-arrow-up"></i
-    ></a>
+  <a href="#" class="back-to-top" aria-label="Back to top">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    >
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </a>
 
-    <!-- JavaScript Libraries -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="../lib/wow/wow.min.js"></script>
-    <script src="../lib/easing/easing.min.js"></script>
-    <script src="../lib/waypoints/waypoints.min.js"></script>
-    <script src="../lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="../script.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Gallery functionality
+        const mainImage = document.getElementById("main-project-image");
+        const thumbnails = document.querySelectorAll(".project-thumbnail");
 
-    <!-- Template Javascript -->
-    <script src="../js/main.js"></script>
+        thumbnails.forEach((thumbnail) => {
+          thumbnail.addEventListener("click", function () {
+            // Update main image
+            mainImage.src = this.getAttribute("data-src");
+
+            // Update active thumbnail
+            thumbnails.forEach((thumb) => thumb.classList.remove("active"));
+            this.classList.add("active");
+          });
+        });
+
+        // Smooth scroll for CTA button
+        const ctaButton = document.querySelector('a[href="#contact-form"]');
+        if (ctaButton) {
+          ctaButton.addEventListener("click", function (e) {
+            e.preventDefault();
+            const contactForm = document.getElementById("contact-form");
+            contactForm.scrollIntoView({ behavior: "smooth" });
+          });
+        }
+      });
+    </script>
   </body>
 </html>
