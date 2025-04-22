@@ -1,0 +1,413 @@
+<!doctype html>
+<html lang="el">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Υπολογισμός Κόστους - Γεωπονική Απολυμαντική</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="calculator-styles.css" />
+  </head>
+  <body>
+    <!-- Header - Updated structure -->
+    <header class="header">
+      <div class="top-bar">
+        <div class="container">
+          <div class="contact-info">
+            <a href="tel:+306936552395" class="contact-link">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                ></path>
+              </svg>
+              +306936552395
+            </a>
+            <a href="mailto:praseino@gmail.com" class="contact-link">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                ></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              praseino@gmail.com
+            </a>
+          </div>
+          <div class="social-links">
+            <a
+              href="https://www.facebook.com/geoponialandscape"
+              aria-label="Facebook"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+                ></path>
+              </svg>
+            </a>
+            <a href="#" aria-label="Instagram">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path
+                  d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"
+                ></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <nav class="navbar">
+          <a href="index.html" class="logo">
+            <img
+              src="img/logo.png"
+              alt="Γεωπονική Απολυμαντική"
+              width="180"
+            />
+          </a>
+          <button class="menu-toggle" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <ul class="nav-menu">
+            <li><a href="index.html" class="active">Αρχική</a></li>
+            <li><a href="index.html#about">Η εταιρία μας</a></li>
+            <li><a href="index.html#services">Υπηρεσίες</a></li>
+            <li><a href="index.html#projects">Τα έργα μας</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Calculator Section -->
+    <section class="calculator-section">
+      <div class="container">
+        <div class="calculator-wrapper">
+          <div class="calculator-card">
+            <div class="calculator-header">
+              <h1>Υπολογισμός Κόστους</h1>
+              <p>
+                Συμπληρώστε τα στοιχεία για να λάβετε μια εκτίμηση κόστους για
+                τις υπηρεσίες μας
+              </p>
+            </div>
+
+            <form id="costCalculator" class="calculator-form">
+              <div class="form-group">
+                <label for="serviceType">Επιλέξτε Υπηρεσία</label>
+                <select id="serviceType" required>
+                  <option value="" disabled selected>Επιλέξτε υπηρεσία</option>
+                  <option value="pest_rodent">Απεντόμωση & Μυοκτονία</option>
+                  <option value="garden">Συντήρηση Κήπου</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="squareMeters">Τετραγωνικά Μέτρα</label>
+                <input
+                  type="number"
+                  id="squareMeters"
+                  name="squareMeters"
+                  min="1"
+                  max="200"
+                  step="0.1"
+                  required
+                />
+              </div>
+
+              <button type="submit" class="calculate-btn">
+                Υπολογισμός Κόστους
+              </button>
+            </form>
+
+            <div id="resultContainer" class="result-container">
+              <div class="result-header">
+                <h2>Εκτίμηση Κόστους</h2>
+              </div>
+              <div class="result-content">
+                <div id="resultDetails" class="result-details"></div>
+                <div id="costResult" class="cost-result"></div>
+              </div>
+              <div class="result-footer">
+                <p>
+                  Η παραπάνω εκτίμηση είναι ενδεικτική. Για ακριβή προσφορά,
+                  επικοινωνήστε μαζί μας.
+                </p>
+                <a href="tel:+306936552395" class="contact-btn">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                    ></path>
+                  </svg>
+                  Επικοινωνήστε μαζί μας
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="calculator-info">
+            <div class="info-card">
+              <div class="info-icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="12" y1="16" x2="12" y2="12"></line>
+                  <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                </svg>
+              </div>
+              <h3>Γιατί να επιλέξετε εμάς</h3>
+              <p>
+                Με πάνω από 21 χρόνια εμπειρίας, προσφέρουμε αποτελεσματικές και
+                οικολογικές λύσεις για την προστασία του χώρου σας.
+              </p>
+            </div>
+
+            <div class="info-card">
+              <div class="info-icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                  <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                </svg>
+              </div>
+              <h3>Πιστοποιημένες Υπηρεσίες</h3>
+              <p>
+                Όλες οι εφαρμογές μας γίνονται από εξειδικευμένους γεωπόνους με
+                πιστοποιημένα και εγκεκριμένα σκευάσματα.
+              </p>
+            </div>
+
+            <div class="info-card">
+              <div class="info-icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                </svg>
+              </div>
+              <h3>Ασφάλεια & Εγγύηση</h3>
+              <p>
+                Παρέχουμε εγγύηση για τις υπηρεσίες μας και φροντίζουμε για την
+                ασφάλεια της οικογένειας και των κατοικιδίων σας.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-info">
+            <img
+              src="img/logo.png"
+              alt="Γεωπονική Απολυμαντική"
+              class="footer-logo"
+              width="160"
+            />
+            <p>
+              Στην εταιρία μας, αφιερωνόμαστε στην εξειδίκευση της μυοκτονίας
+              και των απεντομώσεων με τον πλέον αποτελεσματικό και βιώσιμο
+              τρόπο. Βασιζόμαστε στην επιστημονική προσέγγιση των γεωπόνων μας
+              για να σας προσφέρουμε λύσεις που είναι αποτελεσματικές και
+              φιλικές προς το περιβάλλον. Συμμόρφωση με τη
+              <a
+                href="https://www.kodiko.gr/nomothesia/document/1107136/nomos-5170-2025"
+                class="fek"
+              >
+                Νομοθεσία 5170/2025 ΦΕΚ.</a
+              >
+            </p>
+          </div>
+
+          <div class="footer-links">
+            <h3>Χρήσιμοι Σύνδεσμοι</h3>
+            <ul>
+              <li><a href="#about">Η εταιρία μας</a></li>
+              <li><a href="#services">Οι υπηρεσίες μας</a></li>
+              <li><a href="#projects">Τα έργα μας</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-contact">
+            <h3>Επικοινωνία</h3>
+            <p>
+              <a
+                href="https://beta.maps.apple.com/?address=Κρήτης+Ωκεανίδων,+Ραφήνα"
+                target="_blank"
+                >Κρήτης Ωκεανίδων, Ραφήνα</a
+              >
+            </p>
+            <p>
+              <a
+                href="http://beta.maps.apple.com/?address=Δήλου+18Α,+121+34+Περιστέρι+Αττικής"
+                target="_blank"
+                >Δήλου 18 Α, Περιστέρι</a
+              >
+            </p>
+            <p>
+              <a
+                href="http://beta.maps.apple.com/?address=Αγίου+Νικολάου+59,+190+04+Σπάτα+Αττικής"
+                target="_blank"
+                >Αγίου Νικολάου 59, Σπάτα</a
+              >
+            </p>
+            <p><a href="tel:+306936552395">+306936552395</a></p>
+            <p><a href="mailto:praseino@gmail.com">praseino@gmail.com</a></p>
+
+            <div class="social-links">
+              <a
+                href="https://www.facebook.com/geoponialandscape"
+                aria-label="Facebook"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+                  ></path>
+                </svg>
+              </a>
+              <a href="#" aria-label="Instagram">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                  <path
+                    d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"
+                  ></path>
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="copyright">
+          <p>
+            &copy; 2025 Γεωπονική Απολυμαντική. Με επιφύλαξη παντός δικαιώματος.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <a href="#" class="back-to-top" aria-label="Back to top">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <polyline points="18 15 12 9 6 15"></polyline>
+      </svg>
+    </a>
+
+    <script src="script.js"></script>
+    <script src="calculator.js"></script>
+  </body>
+</html>
