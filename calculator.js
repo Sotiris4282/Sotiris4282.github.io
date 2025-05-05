@@ -139,24 +139,4 @@ document.addEventListener("DOMContentLoaded", function () {
       300 + index * 150,
     );
   });
-
-  const menuToggle = document.querySelector(".menu-toggle");
-  const navMenu = document.querySelector(".nav-menu");
-  if (menuToggle) {
-    menuToggle.addEventListener("click", function () {
-      navMenu.classList.toggle("active");
-      document.body.classList.toggle("menu-open");
-    });
-  }
-
-  const backToTopBtn = document.querySelector(".back-to-top");
-  if (backToTopBtn) {
-    window.addEventListener("scroll", () => {
-      backToTopBtn.classList.toggle("active", window.pageYOffset > 300);
-    });
-    backToTopBtn.addEventListener("click", (e) => {
-      e.preventDefault();
-      window.scrollTo({ top: 0, behavior: "smooth" });
-    });
-  }
 });

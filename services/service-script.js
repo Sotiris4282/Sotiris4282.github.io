@@ -1,33 +1,4 @@
 document.addEventListener("DOMContentLoaded", function () {
-  // Mobile menu toggle
-  const menuToggle = document.querySelector(".menu-toggle");
-  const navMenu = document.querySelector(".nav-menu");
-
-  if (menuToggle) {
-    menuToggle.addEventListener("click", function () {
-      navMenu.classList.toggle("active");
-      document.body.classList.toggle("menu-open");
-    });
-  }
-
-  // Back to top button
-  const backToTopBtn = document.querySelector(".back-to-top");
-
-  if (backToTopBtn) {
-    window.addEventListener("scroll", () => {
-      if (window.pageYOffset > 300) {
-        backToTopBtn.classList.add("active");
-      } else {
-        backToTopBtn.classList.remove("active");
-      }
-    });
-
-    backToTopBtn.addEventListener("click", (e) => {
-      e.preventDefault();
-      window.scrollTo({ top: 0, behavior: "smooth" });
-    });
-  }
-
   // Smooth scrolling for anchor links
   document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     anchor.addEventListener("click", function (e) {
